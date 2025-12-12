@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BubbleBloom JC</title>
+    <link rel="icon" href="bubblebloom_logo.jpeg">
+    <link rel="stylesheet" href="bulma/bulma.css">
+    <style>
+      .halfpage {
+        display: flex;
+        height: 100vh !important;
+        justify-content: center;
+        align-items: center;
+      }
+      @media screen and (max-width: 768px) {
+        .halfpage {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 769px) {
+        .halfpage {
+          width: 50%;
+        }
+      }
+    </style>
+    <script src="animation.js"></script>
+  </head>
+  <body>
+    <div id="background" style="position: fixed; z-index: 0; height: 100vh; width: 100vw; background-color: blue;">
+      <img src="bubbles.gif" style="height: 100%; width: 100%; filter: grayscale(100%); mix-blend-mode: multiply;"/>
+    </div>
+    <div style="position: absolute; z-index: 1;">
+      <section id="title-bar" class="hero" style="background-color: #fffff5;"><div class="hero-body" style="display: flex; flex-direction: row; align-items: center;"><div class="columns"></div>
+        <span class="icon" style="height: 10rem; width: 10rem;"><img src="bubblebloom_logo.jpeg"></span>
+        <div class="content"><p class="title is-1">BubbleBloom</p><p class="subtitle is-3">Handgemachte Badebomben</p></div>
+        <div class="tabs is-centered"><ul>
+          <li><a href="#contact">Kontaktieren Sie uns</a></li>
+        </ul></div>
+      </div></section>
+      <section class="section"><div style="display: flex; flex-direction: column;">
+        <div class="halfpage" style="align-self: start;"><div class="card" style="display: flex; flex-direction: row; max-height: 100%;">
+          <div class="card-image"><figure class="image"><img src="bubblebloom_logo.jpeg"></figure></div>
+          <div class="card-content"><div class="content"><h1><span class="icon-text"><span class="icon is-large"><img src="bubble_icon.svg"></span></span>Unser Produkt</h1>BubbleBloom ist eine Junior Company, die handgemachte Badebomben 
+            mit natürlichen Inhaltsstoffen herstellt. Die sprudelnden Kugeln sorgen für Farbe und Duft im 
+            Bad-ein besonderes Erlebnis für jedes Alter!
+          </div></div>
+        </div></div>
+        <div class="halfpage" style="align-self: end;"><div class="card" style="max-height: 100%;">
+          <div class="card-image"><figure class="image"><img src="badebomben_salz.jpg"></figure></div>
+          <div class="card-content"><div class="content"><h1>Was uns besonders macht</h1>Unser Ziel ist es, 
+            kleine Wellness-Momente in den Alltag zu bringen – mit Produkten, die nicht nur gut duften, sondern auch guttun.
+            Unsere Badebomben bestehen aus sorgfältig ausgewählten, natürlichen Inhaltsstoffen und werden mit viel Liebe zum Detail von Hand gefertigt.
+            Inspiration finden wir bei Marken wie LUSH, die für Kreativität, Qualität und Nachhaltigkeit stehen. Genau wie sie 
+            möchten wir zeigen, dass bewusste Pflege auch bunt, aufregend und voller Spaß sein kann – nur eben auf unsere eigene Art. 
+          </div></div>
+        </div></div>
+      </div></section>
+      <section id="contact" class="section"><div class="columns" style="justify-content: center; text-align: center;">
+        <div class="column is-narrow"><a class="box" style="display: block;" href="https://instagram.com/bubblebloom_jc">
+          <span class="icon"><img src="instagram_logo.png"></i></span>
+          <div class="content">Instagram</div>
+          <div class="content">@bubblebloom_jc</div>
+        </a></div>
+        <div class="column is-narrow"><a class="box" style="display: block;" href="mailto:bubble.bloom@yahoo.com">
+          <span class="icon"><img src="mail_icon.svg"></i></span>
+          <div class="content">E-Mail</div>
+          <div class="content">bubble.bloom@yahoo.com</div>
+        </a></div>
+      </div></section>
+      <section class="hero is-light"><div class="hero-body"><div class="container has-text-centered">
+        © 2025 BubbleBloom JC All rights reserved.
+      </div></div></section>
+    </div>
+  </body>
+</html>
